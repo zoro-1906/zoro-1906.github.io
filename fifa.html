@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fifa 2022 Analysis Dashboard | Project Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            color: #f1f5f9;
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            color: #60a5fa;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        h3.image-heading {
+            margin-top: 3rem;
+            color: #93c5fd;
+            font-size: 1.3rem;
+        }
+
+        ul.project-features {
+            list-style: none;
+            padding: 0;
+            max-width: 700px;
+            margin: 2rem auto;
+            text-align: left;
+        }
+
+        ul.project-features li {
+            margin: 1rem 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #e2e8f0;
+        }
+
+        ul.project-features li i {
+            color: #3b82f6;
+            min-width: 20px;
+        }
+
+        .banner-images {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .banner-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        a.back-btn {
+            display: inline-block;
+            padding: 0.6rem 1.4rem;
+            background: #3b82f6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+            font-size: 0.95rem;
+        }
+
+        a.back-btn:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            text-align: center;
+            color: #94a3b8;
+            margin-top: 4rem;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .project-description {
+                font-size: 1rem;
+            }
+
+            ul.project-features li {
+                font-size: 0.95rem;
+            }
+
+            h3.image-heading {
+                font-size: 1.1rem;
+            }
+
+            .back-btn {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-description {
+                font-size: 0.95rem;
+            }
+
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Fifa 2022 Analysis Dashboard</h1>
+
+        <p class="project-description">
+            This project showcases a dynamic Power BI dashboard analyzing detailed match-level
+            statistics from the FIFA World Cup 2022.
+        </p>
+
+        <h3 class="image-heading">🌍 Overview Dashboard (Page 1) </h3>
+        <div class="banner-images">
+            <img src="Images/Fifa/Overview page.png" alt="Dashboard Overview">
+        </div>
+
+        <ul class="project-features">
+            <li><i class="fas fa-futbol"></i> KPIs for total matches, total goals, yellow cards, red cards, and penalty
+                stats</li>
+            <li><i class="fas fa-map-marked-alt"></i> Shape map highlighting participating countries visually</li>
+            <li><i class="fas fa-chart-column"></i> Clustered bar chart comparing total goals scored by each country
+            </li>
+            <li><i class="fas fa-eye"></i> Visual breakdown of penalty vs non-penalty goals with custom visuals</li>
+            <li><i class="fas fa-tachometer-alt"></i> Clean and fast-loading overview for high-level insights at a
+                glance</li>
+
+        </ul>
+
+        <h3 class="image-heading">🛡️ Team Statistics (Page 2)</h3>
+        <div class="banner-images">
+            <img src="Images/Fifa/Team Statistics Page.png" alt="Revenue Breakdown">
+        </div>
+
+        <ul class="project-features">
+            <li><i class="fas fa-flag"></i> KPIs for each team: attempts, shots on target, goals scored, offsides</li>
+            <li><i class="fas fa-filter"></i> Team filter dropdown to view specific squad statistics</li>
+            <li><i class="fas fa-users"></i> Dynamic player list for each team with position and club information</li>
+            <li><i class="fas fa-star"></i> KPI card for top scorer of each team with goals tally</li>
+            <li><i class="fas fa-table"></i> Clean tabular format for team-wise player data presentation</li>
+
+        </ul>
+
+        <h3 class="image-heading">⚽ Match Statistics (Page 3)</h3>
+        <div class="banner-images">
+            <img src="Images/Fifa/Match Statistics Page.png" alt="Host Performance Insights">
+        </div>
+
+        <ul class="project-features">
+            <li><i class="fas fa-list-ul"></i> Dropdown selector for all matches in the tournament</li>
+            <li><i class="fas fa-shield-alt"></i> Displays team names and flags for each selected match</li>
+            <li><i class="fas fa-chart-pie"></i> Donut charts for ball possession, passes completed, and fouls committed
+            </li>
+            <li><i class="fas fa-chart-bar"></i> Clustered column charts for crosses attempted and corners taken</li>
+            <li><i class="fas fa-play-circle"></i> Seamless match-by-match breakdown for post-match analysis</li>
+        </ul>
+
+        <div class="button-group">
+            <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="https://github.com/zoro-1906/Fifa-Worldcup-2022-Analysis" target="_blank" class="back-btn">
+                <i class="fab fa-github"></i> Go to Github
+            </a>
+            <a href="PDFs/Fifa 2022.pdf" download="Fifa 2022.pdf" class="back-btn">
+                <i class="fas fa-file-pdf"></i> Download PDF
+            </a>
+        </div>
+
+        <footer>
+            <p>© 2025 Zuhair Rawoot | <i class="fa-solid fa-phone"></i> +971 544409738</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
